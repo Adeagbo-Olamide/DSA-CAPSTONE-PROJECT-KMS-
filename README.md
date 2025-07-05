@@ -1,93 +1,38 @@
-#### DSA-CAPSTONE-PROJECT-KMS-
+# DSA-CAPSTONE-PROJECT-KMS-
 
-##### Project Title: KMS SALES ANALYSIS
-##### Project overview: This project is to provide valuable insights and findings on Kultra Mega Stores (KMS), using their SALES DATA 
+### Project Title: KMS SALES ANALYSIS
+### Project overview: Kultra Mega Stores (KMS), headquartered in Lagos, specialises in office supplies and furniture. Its customer base includes individual consumers, small businesses (retail), and large corporate clients (wholesale) across Lagos, Nigeria.This project is to analyze KMS sales DATA and provide valuable insights and findings to the Business Manager.
 
-##### Provided by DSA
-#### Tools used
--SQL
--GIThub for Portfolio building
+#### Data used
+Provided by KMS as an Excel file
+### Tools used
+Excel for Data cleaning
+-SQL server (For Querying and Analysis)
 
+### Data Cleaning and Preparation
+The KMS Sales Data was checked for Duplicates, missing values and errors to ensure it was fit for use.
 
-#### Data analysis
-
-select *from [kms Sql Case study]
-select (Product_Category) ,sum (sales) as [Total Sales] from [KMS Sql Case Study]
-group by Product_Category
-order by [Total Sales]desc
-
-
------2a. TOP 3 REGIONS
-SELECT TOP 3 (REGION), SUM (sales) AS [Total Sales]
-from [KMS Sql Case Study]
-group by Region
-order by [Total Sales]asc
-
------2b. BOTTOM 3 REGIONS
-SELECT TOP 3 (REGION), SUM (sales) AS [Total Sales]
-from [KMS Sql Case Study]
-group by Region
-order by [Total Sales]DESC
-
------3. TOTAL SALES IN ONTARIO
-SELECT Product_Sub_Category,SUM(SALES) AS [TOTAL SALES]
-from [KMS Sql Case Study]
-WHERE Region= 'ONTARIO'
-GROUP BY Product_Sub_Category
-
------4.
-
-ALTER table[KMS Sql case study]
-alter column order_quantity int
-
-SELECT TOP 10 CUSTOMER_NAME,SHIPPING_COST,SALES,DISCOUNT,UNIT_PRICE,SUM(ORDER_QUANTITY) AS [TOTAL ORDER QUANTITY]
-FROM [KMS Sql Case Study]
-GROUP BY CUSTOMER_NAME,SHIPPING_COST,SALES,DISCOUNT,UNIT_PRICE
-ORDER BY [TOTAL ORDER QUANTITY]DESC
-
--------5.
-select ship_mode,sum(shipping_cost)as [Total shipping cost]
-from [KMS Sql Case Study]
-group by Ship_Mode
-order by [Total shipping cost]desc
-
-------6
-select customer_segment,product_sub_category,customer_name,sum(sales) as [Total sales]
-from[KMS Sql Case Study]
-group by customer_segment,product_sub_category,customer_name
-order by[Total sales]desc
-
------7
-select top 1 *from [KMS Sql Case Study]
-where Customer_Segment='small business'
-order by Sales desc
-
------8
-select top 1 *from [KMS Sql Case Study]
-where Customer_Segment='corporate'
-order by Order_Quantity desc
-
-----9
-select top 1 *from [KMS Sql Case Study]
-where Customer_Segment='consumer'
-order by Profit desc
-
------10
-select *from [KMS Sql Case Study]
-select *from [dbo].[Order_Status]
-
-select [KMS Sql Case Study].Customer_Name,
-[KMS Sql Case Study].Product_Category,
-[KMS Sql Case Study].Order_ID,
-Order_Status.Order_ID,
-Order_Status.Status
-
-from [KMS Sql Case Study]
-join Order_Status
-on [KMS Sql Case Study].Row_ID = Order_Status.Order_ID
+### Analyzing the Data
+The data was analyzed using SQL, while importing the data i made sure the Columns of the Data had the right Data type
+I used the approprate codes to get information about these :
+- The Product category with highest sales
+- The Top 3 and Bottom 3 regions in terms of sales 
+- The total sales of appliances in Ontario
+- The Shipping method that incurred the most cost
+- The most valuable customers, and what products or services do they typically purchase
+- The customer with the highest sales that runs a small business 
+- The Customer which placed the most number of orders in 2009 – 2012 that runs a coporate business 
+- Which consumer customer that they had the highest profit on
+- The segment the customer that returned items belong to
 
 
- kms data.txt…]()
+
+
+
+
+
+
+
 
 
 
