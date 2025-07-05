@@ -6,7 +6,7 @@
 #### Data used
 Provided by KMS as an Excel file
 ### Tools used
-Excel for Data cleaning
+-Excel for Data cleaning
 -SQL server (For Querying and Analysis)
 
 ### Data Cleaning and Preparation
