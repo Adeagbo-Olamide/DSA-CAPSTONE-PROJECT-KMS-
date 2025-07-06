@@ -26,7 +26,7 @@ I used the approprate codes to get information about these :
 - The segment the customer that returned items belong to
 
 #### NOTE: Information on the above data set have been represented and uploaded on the repositry.
-yes, the company appropriately spent shipping cost based on the order priority
+No the company did not appropriately spent shipping cost based on the order priority because even the highest profit from the consumer category the shipping method was by regular air and they would be more economical if they have used regular air instesd thereby saving cost and increasing their profit as the shipping cost for express air is quite on the high side.
 
 
 
