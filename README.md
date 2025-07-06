@@ -25,6 +25,10 @@ I used the approprate codes to get information about these :
 - Which consumer customer that they had the highest profit on
 - The segment the customer that returned items belong to
 
+#### NOTE: Information on the above data set have been represented and uploaded on the repositry.
+yes, the company appropriately spent shipping cost based on the order priority
+
+
 
 
 
